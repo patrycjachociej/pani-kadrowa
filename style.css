@@ -1,0 +1,3355 @@
+/*
+
+Theme Name: PaniKadrowa2
+Theme URI: http://panikadrowa.pl
+Description: Motyw strony panikadrowa.pl
+Author: Michal Ilenda, Patrycja Chociej
+Template: PaniKadrowa2
+Version: 1.3
+
+*/
+
+/* BROWSER CSS CLEAR */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    overflow-x:hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@media screen and (orientation: landscape) {
+
+/* MAIN CONTENT */
+
+.wrapper{
+    width: 96%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.wrapper-nav {
+    padding: 0 2%;
+}
+
+section {
+    margin-bottom: 15vh;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+}
+
+/*/////////////////////////////////////////////*/
+/* HEADER */
+@media screen and (orientation: landscape) {
+* {
+    font-family: 'Lato', sans-serif;
+}
+.logo-white {
+	display: none;
+}
+header{
+    padding: 20px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    
+    display: block;
+    overflow: hidden;
+    
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+    z-index: 10;
+}
+
+header h1 {
+    line-height: 0;
+    margin: 0;
+    text-indent: -10000px;
+}
+
+header img{
+    margin: 0;
+    width: 200px;
+    float: left;
+    padding-top: 10px;
+    margin-bottom: 70vh;
+    position: absolute;
+}
+
+header nav{
+    float: right;
+    position: relative;
+}
+
+header nav h2{
+    line-height: 0;
+    margin: 0;
+    text-indent: -10000px;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+header nav li{
+    list-style-type: none;
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+    
+    display: inline-block;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.nav-color {
+	color: black;
+}
+.nav-active.cennik {
+	color: black !important;
+}
+.sliding-border {
+    position: absolute;
+    bottom: 40px;
+    width: 0px;
+    height: 3px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    
+    margin-left: 0px;
+    background-color: #D9017A;
+}
+
+header:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+/* MAIN BANNER */
+
+#main-banner {
+    position: relative;
+    width: 100%;
+    height: 52vw;
+    
+    background: url('http://panikadrowa.pl/wp-content/uploads/2017/08/bg.png') -40px -80px;
+    background-size: calc(110% + 80px);
+    background-repeat: no-repeat;
+}
+
+#main-banner .content {
+    padding-left: calc(2% + 200px);
+    position: relative;
+    padding-top: 16%;
+    
+    z-index: 2;
+}
+
+#main-banner h1, h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#main-banner h2 {
+    font-size: 25px;
+}
+
+.question-mark {
+    padding-right: 18px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#main-banner h3 {
+    padding-top: 20px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: 16px;
+    float: left;
+} 
+
+#main-banner a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    height: 45px;
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-panel {
+    background-color: #f5108a;
+    box-shadow: 0px 0px 12px rgba(184, 7, 101, .5);
+}
+.btn-pink {
+    background-color: #D9017A;
+    position: relative;
+    margin-top: -22.5px;
+    
+    box-shadow: 0px 0px 12px rgba(230, 0, 126, .6);
+}
+
+.btn-blue:hover {
+    background-color: #F30D8B;
+}
+
+.btn-pink:hover {
+    background-color: #F30D8B;
+}
+
+#main-banner button {
+    margin-left: 30px;
+}
+
+
+/* BUSINESS POINTS */
+
+#business-points {
+    height: auto;
+    padding-bottom: 0px;
+}
+
+#business-points h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 10vh; /* 135px */
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+#business-points hr {
+    background-color: #D9017A;
+    border: 0;
+    height: 3px;
+    width: 88px;
+}
+
+#business-points .opis {
+    padding-top: 32px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#business-points ul {
+    padding-top: 64px;
+}
+
+#business-points li{
+    width: 27%;
+    height: auto;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 3.16666%;
+    padding-right: 3.16666%;
+    line-height: 1.5em;
+    font-size: 12.8px;
+}
+#business-points img{
+	height: 8vh;
+    width: auto;
+}
+
+#business-points ul h3 {
+    padding-top: 2vh;
+    height: 72px;
+    padding-bottom: 12vh;
+}
+
+#business-points:after{
+    clear: both;
+    display: block;
+    content: "";
+}
+
+/* BUSINESS OUTSOURCING */
+
+#business-outsourcing {
+    padding-top: auto;
+    padding-bottom: 10vh;
+    height: auto;
+    position: relative;
+}
+
+#business-outsourcing h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#business-outsourcing hr {
+    background-color: #D9017A;
+    border: 0;
+    height: 3px;
+    width: 112px;
+    margin-left: 0;
+}
+
+#business-outsourcing h3 {
+    font-size: 16px;
+    padding-bottom: 32px;
+    width: 32%;
+    line-height: 1.5;
+    color: #575656;
+}
+
+#business-outsourcing h2 {
+    color: black;
+    font-size: 16px;
+    width: 32%;
+    line-height: 1.5;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 16px;
+    padding-top: 32px;
+}
+
+#business-outsourcing ul {
+    margin: 0;
+    padding: 0;
+    width: 45%;
+}
+
+#business-outsourcing li {
+    list-style-type: none;
+    margin: 18px 0;
+    font-size: 12.8px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+}
+
+#business-outsourcing .outsourcing-img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    right: -3%;
+    top: 0;
+    padding-top: 5%;
+}
+
+#business-outsourcing ul img {
+    height: 20px;
+	padding-right: 20px;
+    width: auto;
+    position: relative;
+    vertical-align: middle; 
+}
+
+/* CHMURA AZURE */
+
+#chmura-azure {
+    text-align: center;
+    height: 56.25vw;
+    position: relative;
+	margin-bottom: 15vh !important;
+}
+
+#chmura-azure video {
+    width: 100vw !important;
+    height: auto;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    
+    display: block;
+    
+    z-index: -1;
+    
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+    
+#azure-mobile-img {
+	display: none;
+}
+
+#chmura-azure h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 28px;
+    padding-top: 50px;
+    color: white;
+    z-index: 10;
+}
+
+#chmura-azure h3 {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 32px;
+}
+
+#chmura-azure hr {
+    background-color: #D9017A;
+    border: 0;
+    height: 3px;
+    width: 112px;
+}
+
+#chmura-azure button {
+    position: absolute;
+    height: 64px;
+    width: 320px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+    box-shadow: 0px 0px 12px rgba(230, 0, 126, .6);
+    
+    bottom: 7%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* BAZA DANYCH W CHMURZE */
+
+#baza-danych {
+    padding-top: auto;
+    padding-bottom: auto;
+    height: auto;
+    position: relative;
+    padding-bottom: 12vh !important;
+}
+
+#baza-danych #baza-danych-img {
+    width: 45vw !important;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -28vw !important;
+    padding-top: 12vh;
+}
+#baza-danych #baza-danych-img-mobile {
+    display: none;
+}
+
+.wrapper-half-right {
+    padding-top: 100px;
+    padding-left: 50%;
+}
+
+#baza-danych h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 16px;
+    line-height: 1.5;
+}
+
+#baza-danych h3 {
+    font-size: 16px;
+    width: 75%;
+    line-height: 1.5;
+    padding-bottom: 24px;
+    color: #575656;
+}
+
+#baza-danych hr {
+    background-color: #D9017A;
+    border: 0;
+    height: 3px;
+    width: 112px;
+    margin-left: 0;
+}
+
+#baza-danych .baza-danych-img {
+    margin-bottom: 8px;
+    margin-top: 32px;
+	width: 28.8%;
+}
+
+#baza-danych ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 32px;
+}
+
+#baza-danych li {
+    list-style-type: none;
+    margin: 18px 0;
+    font-size: 12.8px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+}
+
+#baza-danych ul img {
+    height: 20px;
+    padding-right: 20px;
+    width: auto;
+    position: relative;
+    vertical-align: middle; 
+}
+
+.btn-green {
+    background-color: #65b822;
+}
+
+.btn-white {
+    background-color: white;
+    border-color: #312526;
+    border: 2px;
+    border-style: solid;
+    color: #312526;
+}
+
+.btn-green:hover {
+    background-color: #72C52F;
+}
+
+.btn-white:hover {
+    background-color: #f7f7f7;
+}
+
+.btn-right {
+    margin-left: 8px;
+}
+
+
+/* KORZYCI */
+
+#korzysci {
+    padding-top: auto;
+    padding-bottom: auto;
+    height: auto;
+    position: relative;
+	margin-bottom: 10vh !important;
+}
+
+#korzysci h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    line-height: 1.5;
+}
+
+#korzysci hr {
+    background-color: #D9017A;
+    border: 0;
+    height: 3px;
+    width: 112px;
+    margin-left: 0;
+    margin-bottom: 40px;
+}
+
+#korzysci h3 {
+    font-size: 16px;
+    padding-bottom: 32px;
+    width: 40%;
+    line-height: 1.5;
+    color: #575656;
+}
+
+#korzysci h2 {
+    color: black;
+    font-size: 16px;
+    width: 40%;
+    line-height: 1.5;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 16px;
+    padding-top: 32px;
+}
+
+#korzysci ul {
+    margin: 0;
+    padding: 0;
+    width: 45%;
+}
+
+#korzysci li {
+    list-style-type: none;
+    margin: 18px 0;
+    font-size: 12.8px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+}
+
+#korzysci .korzysci-img {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    top: 14%;
+}
+
+#korzysci ul img {
+    height: 20px;
+    padding-right: 20px;
+    width: auto;
+    position: relative;
+    vertical-align: middle; 
+}
+
+
+
+
+/* ZOBACZ CENNIK */
+
+#zobacz-cennik {
+    position: relative;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+#zobacz-cennik button {
+    position: absolute;
+    height: 64px;
+    width: 288px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+    box-shadow: 0px 0px 12px rgba(230, 0, 126, .6);
+    
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* FOOTER */
+
+footer {    
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+footer .footer-col-1 {
+    width: 35%;
+    padding-right: 15%;
+}
+
+footer img {
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+footer h3 {
+    color: #575656;
+    margin-bottom: 20px;
+}
+
+footer li {
+    line-height: 1.8;
+    color: #575656;
+}
+
+.footer-linki {
+    font-weight: bold;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.footer-linki a {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.footer-linki a:nth-child(1) {
+    padding-left: 0;
+}
+
+.credits {
+    color: #575656;
+    font-size: 12px;
+    padding-bottom: 20px;
+    float: right;
+}
+
+.credits a:hover {
+    color: #F30D8B;
+}
+
+footer a {
+    text-decoration: none;
+    color: #575656;
+}
+
+
+/* CENNIK */
+
+#cennik {
+    height: auto;
+    margin-top: 20vh;
+}
+
+#cennik h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#cennik h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 24px;
+    color: #575656;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+#cennik hr {
+    background-color: #D9017A;
+    border: 0;
+    height: 3px;
+    width: 112px;
+    margin-bottom: 80px;
+}
+
+#cennik .boxes {
+    margin-bottom: 50%;
+}
+
+#cennik .box-mobile {
+    display: none;
+}
+    
+#cennik .box {
+    float: left;
+    height: auto;
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    padding-bottom: 100px;
+    
+    background: url(http://panikadrowa.pl/wp-content/uploads/2017/08/cennik-bg-tiny.png) no-repeat;
+    background-position: top right;
+    background-size: 80%;
+    
+    border-radius: 30px;
+}
+
+#cennik .box h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 14.4px;
+    padding-bottom: 9%;
+}
+
+#cennik .box img {
+    padding-top: 20%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 5%;
+    width: 50%;
+}
+
+#cennik .box:hover {
+    box-shadow: 0px 0px 100px rgba(230, 0, 126, .6);
+}
+
+#cennik .zl {
+    color: #e6007e;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: top;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 3px;
+}
+
+#cennik .cena {
+    color: #e6007e;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#cennik .za-co {
+    color: #C2C2C2;
+    text-align: center;
+    font-size: 18.4px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+#cennik .usluga {
+    color: #C2C2C2;
+    font-size: 14.4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#cennik .box:nth-child(4)::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#cennik h4 {
+    color: #D9017A;
+    text-align: center;
+    font-size: 18.4px;
+    margin-bottom: 17vh;
+}
+
+/* MASZ PYTANIA? */
+
+#masz-pytania {
+    height: auto;
+    padding-bottom: 20vh;
+}
+
+#masz-pytania img {
+    width: 26.4%;
+    position: absolute;
+    right: 9%;
+    padding-top: 7%;
+}
+
+#masz-pytania h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 56px;
+    padding-bottom: 16px;
+    line-height: 1.5;
+}
+
+#masz-pytania h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 24px;
+    color: #575656;
+    font-family: 'Lato', sans-serif;
+}
+
+#masz-pytania hr {
+    background-color: #D9017A;
+    border: 0;
+    height: 3px;
+    width: 112px;
+    margin-bottom: 32px;
+    margin-left: 0;
+}
+
+#masz-pytania p {
+    padding: 16px 0;
+    color: #909090;
+}
+
+.contact {
+    width: 32%;
+    color: #909090;
+    background-color: #E6E6E6;
+    border: none;
+    line-height: 40px;
+    border-radius: 28.4px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 16px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #909090;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #909090;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #909090;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #909090;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #909090;
+}
+
+.btn-submit {
+    margin-left: calc(32% - 75px );
+    background-color: #D9017A;
+    font-size: 16px;
+    font-weight: bold;
+	height: 45px;
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1700px) and (orientation: landscape) {
+    #chmura-azure button {
+        bottom: 3%;
+    }
+    #korzysci .korzysci-img {
+        width: 40%;
+        height: auto;
+        position: absolute;
+        right: 4%;
+        bottom: 0;
+        top: 14%;
+    }
+}
+@media screen and (max-width: 1450px) and (orientation: landscape) {
+    #business-outsourcing .outsourcing-img {
+        width: 45%;
+        right: 3%;
+        top: 5%;
+    }
+    section {
+        padding-left: 2%;
+    }
+    #chmura-azure button {
+        bottom: 4%;
+    }
+    #chmura-azure h1 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    #baza-danych #baza-danych-img {
+        width: 48vw !important;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -20vw !important;
+        padding-top: 18vh;
+    }
+    #korzysci .korzysci-img {
+        width: 40%;
+        height: auto;
+        position: absolute;
+        right: 4%;
+        bottom: 0;
+        top: 15%;
+    }
+    #masz-pytania img {
+        width: 30%;
+        right: 9%;
+        padding-top: 8%;
+    }
+    #cennik .boxes {
+        margin-bottom: 52%;
+    }
+}
+
+@media screen and (max-width: 1370px) and (orientation: landscape) {
+    #main-banner h1 {
+        font-size: 62px;
+    }
+    
+    #main-banner h2 {
+        font-size: 22px;
+    }
+    #business-points {
+        padding-bottom: 0px;
+    }
+    #business-points .opis {
+        width: 85%;
+        padding-bottom: 70px;
+    }
+    #business-outsourcing {
+        padding-top: 0;
+        padding-bottom: 10vh;
+        height: auto;
+        position: relative;
+    }
+    
+    #chmura-azure h1 {
+        padding-bottom: 18px;
+    }
+    
+    #chmura-azure button {
+        bottom: 1%;
+    }
+    #baza-danych #baza-danych-img {
+        width: 28vw !important;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -22vw !important;
+        padding-top: 1vh;
+    }
+    #korzysci .korzysci-img {
+        width: 38%;
+        height: auto;
+        position: absolute;
+        right: 4%;
+        bottom: 0;
+        top: 17%;
+    }
+    #cennik h4 {
+        padding-top: 15vh;
+    }
+    
+    #masz-pytania {
+        padding-left: 2%;
+    }
+    #masz-pytania img {
+        width: 30%;
+        right: 12%;
+    }
+    #cennik .boxes {
+        margin-bottom: 46%;
+    }
+}
+
+@media screen and (max-width: 1100px) and (orientation: landscape) {
+    header img {
+        width: 180px;
+    }
+    #main-banner {
+        background: url('http://panikadrowa.pl/wp-content/uploads/2017/08/bg.png') -20px -80px;
+        background-size: calc(120% + 80px);
+        background-repeat: no-repeat;
+    }
+    #main-banner .content {
+        padding-left: calc(2% + 180px);
+        position: relative;
+        padding-top: 16%;
+        z-index: 2;
+    }
+    #main-banner h1 {
+        font-size: 50px;
+    }
+    #main-banner h2 {
+        font-size: 20px;
+    }
+    .question-mark {
+        padding-right: 15px;
+        font-size: 23px;
+    }
+
+    #main-banner h3 {
+        padding-top: 20px;
+        line-height: 23px;
+        font-size: 15px;
+    }
+    #business-points h1 {
+        font-size: 38px;
+    }
+    #business-points .opis {
+        padding-bottom: 50px;
+        width: 90%;
+    }
+    #business-points img{
+        height: 9vh;
+        width: auto;
+    }
+    #business-points ul h3 {
+        padding-top: 4vh;
+        height: 72px;
+        padding-bottom: 8vh;
+    }
+    #business-outsourcing {
+        padding-left: 2%;
+    }
+    #business-outsourcing h1 {
+        font-size: 38px;
+    }
+    #business-outsourcing h3 {
+        width: 40%;
+    }
+    #business-outsourcing h2 {
+        width: 40%;
+    }
+    #business-outsourcing ul {
+        width: 50%;
+    }
+    #business-outsourcing .outsourcing-img {
+        width: 45%;
+        right: 3%;
+        top: 0;
+        padding-top: 5%;
+    }
+    #chmura-azure {
+        height: calc(56.25vw * 1.3);
+        margin-bottom: 8vh;
+    }
+    #chmura-azure video {
+        width: 130vw !important;
+    }
+    #chmura-azure h1 {
+        font-size: 38px;
+        padding-top: 25px;
+    }
+    #chmura-azure h3 {
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+    #baza-danych {
+        padding-bottom: 8vh;
+    }
+    #baza-danych h1 {
+        font-size: 38px;
+    }
+    #baza-danych h3 {
+        width: 90%;
+    }
+    #baza-danych #baza-danych-img {
+        width: 50vw !important;
+        top: 0;
+        left: -18vw !important;
+        padding-top: 18vh;
+    }
+    #korzysci {
+        padding-left: 2%;
+    }
+    #korzysci h1 {
+        font-size: 38px;
+    }
+    #korzysci .korzysci-img {
+        width: 40%;
+        height: auto;
+        position: absolute;
+        right: 4%;
+        bottom: 0;
+        top: 30%;
+    }
+    #zobacz-cennik {
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+    #cennik .boxes {
+        margin-bottom: 55%;
+    }
+    #masz-pytania img {
+        width: 36%;
+        right: 9%;
+        padding-top: 12%;
+    }
+    #cennik .box {
+        padding-bottom: 70px;
+    }
+    
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    header img{
+        width: 170px;
+        padding-top: 0;
+    }
+    header nav li{
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    #main-banner h1 {
+        font-size: 44px;
+    }
+    #main-banner h2 {
+        font-size: 16px;
+    }
+    .question-mark {
+        padding-right: 15px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    #main-banner .content {
+        padding-left: calc(2% + 170px);
+    }
+    #main-banner h3 {
+        font-size: 15px;
+    }
+    #main-banner a {
+        line-height: 22px;
+        font-size: 15px;
+    } 
+    button {
+        height: 42px;
+        width: 130px;
+        font-size: 15px;
+    }
+    #business-points h1 {
+        font-size: 28px;
+    }
+    #business-points .opis {
+        padding-bottom: 0px;
+        width: 94%;
+        font-size: 15px;
+    }
+    #business-points img{
+        height: 11vh;
+        padding-top: 40px;
+    }
+    #business-outsourcing h1 {
+        font-size: 28px;
+    }
+    #business-outsourcing h3 {
+        width: 40%;
+        font-size: 15px;
+    }
+    #business-outsourcing h2 {
+        width: 40%;
+        font-size: 15px;
+    }
+    #business-outsourcing .outsourcing-img {
+        padding-top: 10%;
+    }
+    #chmura-azure h1 {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+    #chmura-azure h3 {
+        padding-left: 0% !important;
+        padding-right: 2%;
+        font-size: 14px;
+    }
+    #chmura-azure {
+        height: calc(56.25vw * 1.5);
+    }
+    #chmura-azure video {
+        width: 150vw !important;
+    }
+    #chmura-azure button {
+        height: 55px;
+        width: 250px;
+        border-radius: 40px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    #baza-danych h1 {
+        font-size: 28px;
+    }
+    #baza-danych h3 {
+        width: 96%;
+        font-size: 15px;
+    }
+    #baza-danych .baza-danych-img {
+        margin-top: 20px;
+    }
+    #baza-danych #baza-danych-img {
+        width: 55vw !important;
+        padding-top: 15vh;
+    }
+    #korzysci {
+        padding-left: 2%;
+    }
+    #korzysci h1 {
+        font-size: 28px;
+    }
+    #korzysci h3 {
+        font-size: 15px;
+    }
+    #zobacz-cennik button {
+        height: 55px;
+        width: 250px;
+        font-size: 16px;
+    }
+    #baza-danych ul img {
+        width: 15px;
+        padding-right: 15px;
+    }
+    #business-outsourcing ul img {
+        width: 15px;
+        padding-right: 15px;
+    }
+    #korzysci ul img {
+        width: 15px;
+        padding-right: 15px;
+    }
+    footer .footer-col-1 {
+        width: 45%;
+        padding-right: 15%;
+    }
+    #cennik h1 {
+        font-size: 38px;
+        line-height: 1.5
+    }
+    #cennik hr {
+        margin-bottom: 50px;
+    }
+    #cennik .boxes {
+        margin-bottom: 65%;
+    }
+    #cennik .box {
+        padding-bottom: 50px;
+    }
+    #cennik .box h2 {
+        line-height: 1.5;
+    }
+    #cennik .zl {
+        font-size: 21px;
+        margin-left: -25px;
+    }
+    #cennik .cena {
+        font-size: 60px;
+    }
+    #cennik .za-co {
+        font-size: 16px;
+    }
+    #cennik .usluga {
+        font-size: 13px;
+    }
+    #masz-pytania hr {
+        margin-left: auto;
+    }
+    /* MASZ PYTANIA? */
+    #masz-pytania {
+        height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 15vh;
+    }
+    #masz-pytania img {
+        display: none;
+    }
+    #masz-pytania h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        padding-top: 25px;
+        padding-bottom: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    #masz-pytania h3 {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-bottom: 25px;
+        color: #575656;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    }
+    #masz-pytania hr {
+        background-color: #D9017A;
+        border: 0;
+        height: 3px;
+        width: 80px;
+        margin-bottom: 25px;
+    }
+    #masz-pytania p {
+        padding: 16px 0;
+        color: #909090;
+    }
+    .contact {
+        width: 90%;
+        color: #909090;
+        background-color: #E6E6E6;
+        border: none;
+        line-height: 40px;
+        border-radius: 28.4px;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    .btn-submit {
+        margin-left: calc(52.5% - 70px);
+        background-color: #D9017A;
+        font-size: 16px;
+        font-weight: bold;
+        height: 40px;
+        width: 120px;
+    	border-radius: 30px;
+    	border: none;
+    	color: white;
+    	cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 710px) and (orientation: landscape) {
+    header img{
+        width: 150px;
+    }
+    header nav li{
+        margin-left: 15px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+    #main-banner h1 {
+        font-size: 30px;
+    }
+    #main-banner h2 {
+        font-size: 15px;
+    }
+    .question-mark {
+        padding-right: 15px;
+        font-size: 20px;
+    }
+    #main-banner .content {
+        padding-left: calc(2% + 100px);
+    }
+    #main-banner h3 {
+        font-size: 15px;
+    }
+    #main-banner a {
+        line-height: 20px;
+        font-size: 14px;
+    } 
+    button {
+        height: 38px;
+        width: 120px;
+        font-size: 14px;
+    }
+    #business-points .opis {
+        font-size: 14px;
+        padding-bottom: 0;
+    }
+    #business-points ul {
+        padding-top: 40px;
+    }
+    #business-points img{
+        height: 13vh;
+    }
+    #business-outsourcing h3 {
+        width: 45%;
+        font-size: 14px;
+    }
+    #business-outsourcing h2 {
+        width: 45%;
+        font-size: 14px;
+    }
+    #business-outsourcing .outsourcing-img {
+        padding-top: 10%;
+    }
+    #chmura-azure h3 {
+        font-size: 13px;
+    }
+    #chmura-azure {
+        height: calc(56.25vw * 1.8);
+    }
+    #chmura-azure video {
+        width: 180vw !important;
+    }
+    #chmura-azure button {
+        height: 50px;
+        width: 230px;
+        font-size: 15px;
+        bottom: 4%;
+    }
+    #baza-danych h3 {
+        width: 96%;
+        font-size: 14px;
+    }
+    #baza-danych .baza-danych-img {
+        margin-top: 20px;
+    }
+    #baza-danych #baza-danych-img {
+        top: 20vh;
+    }
+    #baza-danych ul img {
+        width: 13px;
+        padding-right: 13px;
+    }
+    #business-outsourcing ul img {
+        width: 13px;
+        padding-right: 13px;
+    }
+    #korzysci ul img {
+        width: 13px;
+        padding-right: 13px;
+    }
+    #zobacz-cennik {
+        padding-bottom: 120px;
+    }
+    footer {
+        text-align: center;
+        float: none;
+    }
+    .credits {
+        text-align: center;
+        float: none;
+    }
+    .footer-linki {
+        float: none;
+    }
+    footer .footer-col-1 {
+        width: 100%;
+        padding-right: 15%;
+    }
+    footer h3 {
+        font-size: 14px;
+    }
+    #cennik .zl {
+        font-size: 19px;
+        margin-left: -23px;
+    }
+    #cennik .cena {
+        font-size: 50px;
+    }
+    #cennik .boxes {
+        margin-bottom: 70%;
+    }
+    #cennik .usluga {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+	.logo-cmyk {
+		display: none;
+	}    
+	header img{
+        width: 130px;
+    }
+    header nav li{
+        margin-left: 14px;
+        margin-top: 0;
+        font-size: 13px;
+    }
+    #main-banner h1 {
+        font-size: 28px;
+        padding: 5px 0;
+        padding-top: 30px;
+    }
+    #main-banner h2 {
+        font-size: 14px;
+    }
+    .question-mark {
+        padding-right: 14px;
+        font-size: 18px;
+    }
+    #main-banner .content {
+        padding-left: calc(2% + 80px);
+    }
+    #main-banner h3 {
+        font-size: 14px;
+    }
+    #main-banner a {
+        line-height: 18px;
+        font-size: 14px;
+    } 
+    button {
+        height: 35px;
+        width: 115px;
+        font-size: 14px;
+    }
+    #business-points .opis {
+        font-size: 13px;
+        padding-bottom: 0;
+    }
+    #business-points ul {
+        padding-top: 40px;
+    }
+    #business-points ul h3 {
+        padding-top: 2vh;
+        height: 60px;
+        padding-bottom: 8vh;
+    }
+    #business-points li{
+        width: 42%;
+		margin-top:10px;
+		margin-bottom: 10px;
+    }
+    #business-points img{
+        height: 12vh;
+    }
+    #business-outsourcing h3 {
+        width: 45%;
+        font-size: 13px;
+    }
+    #business-outsourcing h2 {
+        width: 45%;
+        font-size: 13px;
+    }
+    #business-outsourcing .outsourcing-img {
+        padding-top: 10%;
+    }
+    #chmura-azure h3 {
+        font-size: 12px;
+    }
+    #chmura-azure {
+        height: calc(56.25vw * 2);
+    }
+    #chmura-azure video {
+        width: 200vw !important;
+    }
+    #chmura-azure button {
+        height: 48px;
+        width: 225px;
+        font-size: 14px;
+        bottom: 3%;
+    }
+    #baza-danych h3 {
+        width: 96%;
+        font-size: 13px;
+    }
+    #baza-danych .baza-danych-img {
+        margin-top: 20px;
+    }
+    #baza-danych #baza-danych-img {
+        top: 20vh;
+    }
+    #baza-danych ul img {
+        width: 13px;
+        padding-right: 13px;
+    }
+    #business-outsourcing ul img {
+        width: 13px;
+        padding-right: 13px;
+    }
+    #korzysci ul img {
+        width: 13px;
+        padding-right: 13px;
+    }
+    #zobacz-cennik {
+        padding-bottom: 100px;
+    }
+    footer {
+        text-align: center;
+        float: none;
+    }
+    .credits {
+        text-align: center;
+        float: none;
+    }
+    .footer-linki {
+        float: none;
+    }
+    footer .footer-col-1 {
+        width: 100%;
+        padding-right: 15%;
+    }
+    footer h3 {
+        font-size: 14px;
+    }
+    #cennik h1 {
+        font-size: 28px;
+        padding-top: 50px;
+        padding-bottom: 12px;
+    }
+    #masz-pytania h1 {
+        font-size: 28px;
+    }
+    #cennik {
+        padding-left: 0%;
+        padding-top: 75px;
+    }
+    #cennik .box {
+        float: none;
+        height: auto;
+        width: 95%;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: left;
+        padding-bottom: 0;
+        background: none;
+        border-radius: 0;
+        
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 8%;
+        margin-bottom: 20px;
+        
+        position: relative;
+        
+        box-shadow: 0px 0px 12px rgba(200, 200, 200, 1);
+
+        background: url(http://panikadrowa.pl/wp-content/uploads/2017/08/cennik-bg3.png) no-repeat;
+        background-position: top right;
+        background-size: 30%;
+    }
+    #cennik .boxes {
+        margin-bottom: 0%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    #cennik .box h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 16px;
+        padding-top: 5%;
+        padding-bottom: 20px;
+    }
+    #cennik .box img {
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 0%;
+        
+        width: auto;
+        height: 21vw;
+        bottom: 20px;
+        position: absolute;
+    }
+    #cennik .box:hover {
+        box-shadow: 0px 0px 12px rgba(200, 200, 200, 1);
+    }
+
+    #cennik .zl {
+        color: #e6007e;
+        font-size: 21px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        position: absolute;
+        margin-left: -25px;
+        margin-top: 3px;
+        padding-left: 66%;
+        padding-top: 1%;
+    }
+
+    #cennik .cena {
+        color: #e6007e;
+        font-size: 60px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        padding-left: 66%;
+        position: absolute;
+        top: 36%;
+    }
+
+    #cennik .za-co {
+        color: #C2C2C2;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 60px;
+        padding-left: 66%;
+        position: absolute;
+        text-align: center;
+    }
+    
+    #cennik .usluga {
+        color: #C2C2C2;
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        padding-left: calc(23vw + 20px);
+    }
+
+    #cennik .box:nth-child(4)::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    #cennik h4 {
+        color: #D9017A;
+        text-align: center;
+        font-size: 18px;
+        padding-top: 30px;
+        margin-bottom: 100px;
+        line-height: 1.5;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    header{
+        padding: 20px 0;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+
+        display: block;
+        overflow: hidden;
+
+        top: 0;
+        width: 100%;
+
+        z-index: 10;
+        
+        text-align: center;
+        
+        background: url('http://panikadrowa.pl/wp-content/uploads/2017/08/bg-mobile-tiny.png') 50% 20%;
+        background-size: 120%;
+        background-repeat: no-repeat;
+    }
+    header nav {
+        float: none;
+        text-align: center;
+    }
+    header img{
+        margin: 0;
+        width: 180px;
+        float: none;
+        padding-top: 0px;
+        position: relative;
+    }
+    header nav ul{
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        float: none;
+    }
+    .sliding-border {
+        display: none;
+    }
+    header li button {
+        display: none;
+    }
+    header nav ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        display: flex;
+        justify-content: center
+    }
+    header nav li{
+        list-style-type: none;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        display: inline-block;
+    }
+}
+ 
+@media screen and (orientation: landscape) and (min-width: 700px) and (max-aspect-ratio: 4/3) {
+	#baza-danych #baza-danych-img{
+        width: 50vw !important;
+    	height: auto;
+    	position: absolute;
+    	top: 0;
+    	left: -18vw !important;
+    	padding-top: 17vh;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    
+    /* HEADER */
+
+    * {
+        font-family: 'Lato', sans-serif;
+        line-height: 1.5;
+    }
+    .logo-cmyk {
+		display: none;
+	}
+    button {
+        border-radius: 30px;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    button a {
+        text-decoration: none;
+        color: white;
+    }
+
+    header{
+        padding: 20px 0;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+
+        display: block;
+        overflow: hidden;
+
+        top: 0;
+        width: 100%;
+
+        z-index: 10;
+        
+        text-align: center;
+        
+        background: url('http://panikadrowa.pl/wp-content/uploads/2017/08/bg-mobile-tiny.png') 50% 20%;
+        background-size: 120%;
+        background-repeat: no-repeat;
+        
+        box-shadow: 0px 0px 20px rgba(100, 100, 100, 1);
+    }
+
+    header h1 {
+        line-height: 0;
+        margin: 0;
+        text-indent: -10000px;
+    }
+
+    header img{
+        margin: 0;
+        width: 35vw;
+        padding-top: 10px;
+    }
+    
+    header ul li:last-child {
+        display: none;
+    }
+
+    header nav h2{
+        line-height: 0;
+        margin: 0;
+        text-indent: -10000px;
+    }
+
+    header nav ul{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    header nav li{
+        list-style-type: none;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        display: inline-block;
+    }
+
+    header nav a{
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+
+    .sliding-border {
+        display: none;
+    }
+    
+
+    /* MAIN BANNER */
+    
+    #main-banner {
+        display: none;
+    }
+
+    /* BUSINESS POINTS */
+    
+    #business-points {
+        height: auto;
+        padding-bottom: 8vh;
+    }
+
+    #business-points h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        padding-top: 6vh;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+
+    #business-points hr {
+        background-color: #D9017A;
+        border: 0;
+        height: 3px;
+        width: 80px;
+    }
+
+    #business-points .opis {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #business-points ul {
+        padding-top: 40px;
+    }
+
+    #business-points li{
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 6%;
+        list-style-type: none;
+        line-height: 1.5em;
+        font-size: 15px;
+        
+        display: flex;
+        align-items: center;
+    }
+    #business-points img{
+        width: 60px;
+        padding-right: 4%;
+        float: left;
+		padding-top: 15px;
+		padding-bottom: 15px;
+    }
+
+    #business-points:after{
+        clear: both;
+        display: block;
+        content: "";
+    }
+    
+    /* BUSINESS OUTSOURCING */
+    
+    #business-outsourcing {
+        padding-bottom: 8vh;
+        height: auto;
+        position: relative;
+    }
+
+    #business-outsourcing h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    #business-outsourcing hr {
+        background-color: #D9017A;
+        border: 0;
+        height: 3px;
+        width: 80px;
+        position: absolute;
+        top: 50px;
+        left: calc(50% - 40px);
+    }
+    
+    #business-outsourcing .outsourcing-img {
+        width: 30%;
+        padding-left: 4%;
+        position: absolute;
+        top: 90px;
+        padding-bottom: 40px;
+    }
+
+    #business-outsourcing h3 {
+        font-size: 16px;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        width: 55%;
+        padding-left: 40%;
+        line-height: 1.5;
+        color: #575656;
+    }
+
+    #business-outsourcing h2 {
+        color: black;
+        font-size: 16px;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        line-height: 1.5;
+        font-weight: normal;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 16px;
+        padding-top: 50px;
+    }
+
+    #business-outsourcing ul {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #business-outsourcing li {
+        list-style-type: none;
+        margin: 18px 0;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 550;
+    }
+
+    #business-outsourcing ul img {
+        height: 20px;
+        padding-right: 20px;
+        width: auto;
+        position: relative;
+        vertical-align: middle;
+    }
+    
+    /* CHMURA AZURE */
+    
+    #chmura-azure {
+        text-align: center;
+        position: relative;
+        height: auto;
+        background-image: url(http://panikadrowa.pl/wp-content/uploads/2017/08/bg-azure-tiny.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        margin-bottom: 8vh;
+    }
+    
+    #azure-mobile-img {
+        width: 30%;
+        float: left;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #chmura-azure video {
+        display: none;
+    }
+
+    #chmura-azure h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        padding-bottom: 10px;
+        padding-top: 30px;
+        color: white;
+        z-index: 10;
+    }
+
+    #chmura-azure h3 {
+        color: white;
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 32px;
+        text-align: left;
+        padding-top: 25px;
+    }
+
+    #chmura-azure hr {
+        background-color: #D9017A;
+        border: 0;
+        height: 3px;
+        width: 80px;
+    }
+
+    #chmura-azure button {
+        position: relative;
+        height: 50px;
+        width: 210px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        background-color: #D9017A;
+        border: none;
+        color: white;
+
+        box-shadow: 0px 0px 12px rgba(230, 0, 126, .6);
+        
+        margin-top: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    
+    /* BAZA DANYCH W CHMURZE */
+    
+    #baza-danych {
+        padding-top: auto;
+        padding-bottom: auto;
+        height: auto;
+        position: relative;
+        padding-bottom: 8vh;
+    }
+
+    #baza-danych #baza-danych-img {
+        display: none;
+    }
+    #baza-danych #baza-danych-img-mobile {
+        width: 30%;
+        padding-left: 5%;
+        position: absolute;
+        top: 2%;
+    }
+
+    .wrapper-half-right {
+        padding-top: 28px;
+        padding-left: 0%;
+    }
+
+    #baza-danych h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        padding-bottom: 20px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    #baza-danych h3 {
+        font-size: 16px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+        padding-right: 5%;
+        width: 58%;
+        padding-left: 40%;
+        line-height: 1.5;
+        color: #575656;
+    }
+
+    #baza-danych hr {
+        background-color: #D9017A;
+        border: 0;
+        height: 3px;
+        width: 80px;
+        position: absolute;
+        top: 125px;
+        left: calc(50% - 40px);
+    }
+
+    #baza-danych .baza-danych-img {
+        margin-bottom: 8px;
+        margin-top: 32px;
+        width: 28%;
+        padding-left: 5%;
+    }
+
+    #baza-danych ul {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    #baza-danych li {
+        list-style-type: none;
+        margin: 18px 0;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 550;
+    }
+
+    #baza-danych ul img {
+        height: 20px;
+        padding-right: 20px;
+        width: auto;
+        position: relative;
+        vertical-align: middle; 
+    }
+
+    .btn-green {
+        background-color: #65b822;
+        height: 45px;
+        width: 130px;
+        margin-left: calc(50% - 120px);
+        font-size: 16px;
+    }
+
+    .btn-white {
+        background-color: white;
+        border-color: #312526;
+        border: 2px;
+        border-style: solid;
+        color: #312526;
+        height: 45px;
+        width: 130px;
+        font-size: 16px;
+    }
+
+    .btn-green:hover {
+        background-color: #72C52F;
+    }
+
+    .btn-white:hover {
+        background-color: #f7f7f7;
+    }
+
+    .btn-right {
+        margin-left: 8px;
+    }
+    
+
+    /* KORZYCI */
+    
+    #korzysci {
+        height: auto;
+        position: relative;
+        margin-bottom: 8vh;
+    }
+
+    #korzysci h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        padding-bottom: 20px;
+        padding-top: 8vh;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    #korzysci hr {
+        background-color: #D9017A;
+        border: 0;
+        height: 3px;
+        width: 80px;
+        position: absolute;
+        top: 180px;
+        left: calc(50% - 40px);
+    }
+
+    #korzysci h3 {
+        font-size: 16px;
+        padding-top: 50px;
+        padding-bottom: 120px;
+        width: 58%;
+        padding-left: 38%;
+        line-height: 1.5;
+        color: #575656;
+    }
+
+    #korzysci h2 {
+        color: black;
+        font-size: 16px;
+        width: 40%;
+        line-height: 1.5;
+        font-weight: normal;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 16px;
+        padding-top: 32px;
+    }
+
+    #korzysci ul {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    #korzysci li {
+        list-style-type: none;
+        margin: 18px 0;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 550;
+    }
+
+    #korzysci .korzysci-img {
+        margin-bottom: 8px;
+        margin-top: 32px;
+        height: 25%;
+        left: 8%;
+        position: absolute;
+        top: 180px;
+    }
+
+    #korzysci ul img {
+        height: 20px;
+        padding-right: 20px;
+        width: auto;
+        position: relative;
+        vertical-align: middle; 
+    }
+
+
+    
+
+    /* ZOBACZ CENNIK */
+    
+    #zobacz-cennik {
+        position: relative;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 170px;
+    }
+
+    #zobacz-cennik button {
+        position: absolute;
+        height: 64px;
+        width: 288px;
+        border-radius: 40px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        background-color: #D9017A;
+
+        box-shadow: 0px 0px 12px rgba(230, 0, 126, .6);
+
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    /* FOOTER */
+    
+    footer {    
+        font-family: 'Lato', sans-serif;
+        line-height: 1.5;
+    }
+    footer h3 {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    footer .footer-col-1 {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    footer img {
+        width: 200px;
+        padding-bottom: 10px;
+    }
+
+    footer h3 {
+        color: #575656;
+        margin-bottom: 20px;
+    }
+
+    footer li {
+        line-height: 1.8;
+        color: #575656;
+    }
+
+    .footer-linki {
+        font-weight: bold;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-linki a {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .footer-linki a:nth-child(1) {
+        padding-left: 0;
+    }
+
+    .credits {
+        color: #575656;
+        font-size: 12px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .credits a:hover {
+        color: #F30D8B;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #575656;
+    }
+
+    
+    /* CENNIK */
+    
+    #cennik {
+        margin-top: 8vh;
+    }
+
+    #cennik h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        padding-top: 0;
+        padding-bottom: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    #cennik h3 {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-bottom: 24px;
+        color: #575656;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    }
+
+    #cennik hr {
+        background-color: #D9017A;
+        border: 0;
+        height: 3px;
+        width: 80px;
+        margin-bottom: 40px;
+    }
+
+    #cennik .boxes {
+        margin-bottom: 20px;
+    }
+
+    #cennik .box {
+        display: none;
+    }
+    
+    #cennik .box-mobile {
+        height: auto;
+        max-width: 100vw;
+        padding-top: 5%;
+        padding-left: 5%;
+        margin-bottom: 20px;
+        
+        position: relative;
+        
+        box-shadow: 0px 0px 12px rgba(200, 200, 200, 1);
+
+        background: url(http://panikadrowa.pl/wp-content/uploads/2017/08/cennik-bg3.png);
+        background-repeat: no-repeat;
+        background-position: 120% 5%;
+        background-size: 47%;
+    }
+
+    #cennik .box-mobile h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 20px;
+        padding-bottom: 5%;
+    }
+
+    #cennik .box-mobile img {
+        width: 20%;
+        padding: 0;
+        margin: 0;
+        float: left;
+    }
+    
+    #cennik .uslugi {
+        float: left;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        padding-top: 2%;
+        width: 35%;
+    }
+    
+    #cennik .usluga {
+        color: #C2C2C2;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 5%;
+    }
+    #cennik .ceny {
+        float: right;
+        padding-right: 20%;
+        position: relative;
+        width: 10%;
+        padding-top: auto;
+        padding-bottom: auto;
+        text-align: center;
+    }
+    #cennik .zl {
+        color: #e6007e;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        position: absolute;
+        left: -20px;
+        top: -7px;
+    }
+
+    #cennik .cena {
+        color: #e6007e;
+        font-size: 70px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+    #cennik .za-co {
+        color: #C2C2C2;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        clear: both;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-left: 10%;
+    }
+    #cennik .ceny::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    
+
+    #cennik .box-mobile:last-child::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    #cennik h4 {
+        color: #D9017A;
+        text-align: center;
+        font-size: 18px;
+        padding-top: 30px;
+        margin-bottom: 100px;
+        line-height: 1.5;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    /* MASZ PYTANIA? */
+    
+    #masz-pytania {
+        height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 15vh;
+    }
+
+    #masz-pytania img {
+        display: none;
+    }
+
+    #masz-pytania h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        padding-top: 25px;
+        padding-bottom: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    #masz-pytania h3 {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-bottom: 25px;
+        color: #575656;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    }
+
+    #masz-pytania hr {
+        background-color: #D9017A;
+        border: 0;
+        height: 3px;
+        width: 80px;
+        margin-bottom: 25px;
+    }
+
+    #masz-pytania p {
+        padding: 16px 0;
+        color: #909090;
+    }
+
+    .contact {
+        width: 90%;
+        color: #909090;
+        background-color: #E6E6E6;
+        border: none;
+        line-height: 40px;
+        border-radius: 28.4px;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+
+    .btn-submit {
+        margin-left: calc(52.5% - 70px);
+        background-color: #D9017A;
+        font-size: 16px;
+        font-weight: bold;
+        height: 40px;
+        width: 120px;
+    	border-radius: 30px;
+    	border: none;
+    	color: white;
+    	cursor: pointer;
+    }
+    footer {
+        text-align: center;
+        float: none;
+    }
+    .credits {
+        text-align: center;
+        float: none;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .footer-linki {
+        float: none;
+    }
+    footer .footer-col-1 {
+        width: 100%;
+        padding-right: 15%;
+        padding-left: 0;
+    }
+    footer h3 {
+        font-size: 14px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-width: 750px) {
+    #business-outsourcing .outsourcing-img {
+        width: 28%;
+        padding-left: 4%;
+        position: absolute;
+        top: 70px;
+        padding-bottom: 40px;
+    }
+	#business-points img {
+        width: 70px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #azure-mobile-img {
+        width: 20%;
+        float: left;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #chmura-azure {
+        background-size: auto 150%;
+    }
+    #chmura-azure h3 {
+        font-size: 18px;
+    }
+    #baza-danych #baza-danych-img-mobile {
+        width: 26%;
+        padding-left: 2%;
+        position: absolute;
+        top: 2%;
+    }
+    
+    #baza-danych h3 {
+        font-size: 16px;
+        width: 65%;
+        padding-left: 30%;
+    }
+    #korzysci hr {
+        top: 215px;
+    }
+    
+    #cennik .box-mobile {
+        height: auto;
+        width: 100%;
+        padding-top: 5%;
+        padding-left: 5%;
+        margin-bottom: 20px;
+        
+        position: relative;
+        
+        box-shadow: 0px 0px 12px rgba(200, 200, 200, 1);
+
+        background: url(http://panikadrowa.pl/wp-content/uploads/2017/08/cennik-bg3.png);
+        background-repeat: no-repeat;
+        background-position: 125% 5%;
+        background-size: 47%;
+    }
+
+    #cennik .box-mobile h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 25px;
+        padding-bottom: 5%;
+    }
+
+    #cennik .box-mobile img {
+        width: 21%;
+        padding: 0;
+        float: left;
+    }
+    
+    #cennik .uslugi {
+        float: left;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        padding-top: 2%;
+        width: 35%;
+    }
+    #cennik .usluga {
+        color: #C2C2C2;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 10%;
+        line-height: 1;
+    }
+    #cennik .ceny {
+        float: right;
+        padding-right: 20%;
+        position: relative;
+        width: 10%;
+        padding-top: auto;
+        padding-bottom: auto;
+        text-align: center;
+    }
+    #cennik .zl {
+        color: #e6007e;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        position: absolute;
+        left: -10%;
+        top: 10px;
+    }
+    #cennik .cena {
+        color: #e6007e;
+        font-size: 80px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+    #cennik .za-co {
+        color: #C2C2C2;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        clear: both;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-left: 10%;
+    }
+    #cennik .ceny::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 610px) {
+    
+    #business-outsourcing h3 {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    #business-points li {
+        font-size: 14px;
+    }
+	#business-points img {
+        width: 55px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #business-outsourcing .outsourcing-img {
+        top: 100px;
+    }
+    #business-outsourcing li {
+        font-size: 13px;
+    }
+    #azure-mobile-img {
+        width: 46%;
+    }
+    #baza-danych #baza-danych-img {
+        display: none;
+    }
+    #baza-danych #baza-danych-img-mobile {
+        width: 26%;
+        padding-left: 6%;
+        position: absolute;
+        top: 17%;
+    }
+    #baza-danych li {
+        font-size: 13px;
+    }
+    #baza-danych h3 {
+        padding-bottom: 50px;
+    }
+    #korzysci .korzysci-img {
+        height: 22%;
+        left: 5%;
+    }
+    #korzysci h3 {
+        padding-bottom: 50px;
+    }
+    #korzysci li {
+        font-size: 13px;
+    }
+    footer img {
+        width: 170px;
+    }
+    footer {
+        text-align: center;
+        float: none;
+    }
+    .credits {
+        text-align: center;
+        float: none;
+    }
+    .footer-linki {
+        float: none;
+    }
+    footer .footer-col-1 {
+        width: 100%;
+        padding-right: 15%;
+    }
+    footer h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 500px) {
+    
+    #cennik .box-mobile {
+        background-repeat: no-repeat;
+        background-position: 115% 5%;
+        background-size: 42%;
+    }
+    #cennik .box-mobile h2 {
+        font-size: 18px;
+        padding-bottom: 3%;
+    }
+    
+    #cennik .uslugi {
+        padding-left: 3%;
+        padding-bottom: 3%;
+        padding-top: 1%;
+        width: 35%;
+    }
+    
+    #cennik .usluga {
+        font-size: 13px;
+        padding-bottom: 5%;
+    }
+    #cennik .zl {
+        color: #e6007e;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        position: absolute;
+        left: -20px;
+        top: -7px;
+    }
+
+    #cennik .cena {
+        font-size: 55px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #cennik .za-co {
+        font-size: 16px;
+        padding-left: 0%;
+    }
+	#business-points li {
+		padding-bottom: 10%;
+	}
+	#business-points img {
+        width: 45px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #business-points .opis {
+        font-size: 14px;
+    }
+    #business-outsourcing h3 {
+        font-size: 15px;
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+    #business-outsourcing h2 {
+        font-size: 15px;
+    }
+    #chmura-azure h3 {
+        font-size: 15px;
+    }
+    #baza-danych h3 {
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+    #baza-danych #baza-danych-img-mobile {
+        width: 26%;
+        padding-left: 6%;
+        position: absolute;
+        top: 17%;
+    }
+    #korzysci .korzysci-img {
+        height: 20%;
+        left: 5%;
+    }
+    #korzysci h3 {
+        padding-bottom: 20px;
+    }
+    #zobacz-cennik {
+        position: relative;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 140px;
+    }
+    footer h3 {
+        font-size: 15px;
+    }
+    footer img {
+        width: 150px;
+    }
+    .footer-linki a {
+        font-size: 15px;
+    }
+    footer {
+        text-align: center;
+        float: none;
+    }
+    .credits {
+        text-align: center;
+        float: none;
+    }
+    .footer-linki {
+        float: none;
+    }
+    footer .footer-col-1 {
+        width: 100%;
+        padding-right: 15%;
+    }
+}
+@media screen and (orientation: portrait) and (max-width: 420px) {
+    #cennik .box-mobile h2 {
+        font-size: 15px;
+    }    
+    #cennik .usluga {
+        font-size: 11px;
+    }
+    #cennik .zl {
+        font-size: 18px;
+        left: -17px;
+        top: -7px;
+    }
+    #cennik .cena {
+        font-size: 40px;
+    }
+    #cennik .za-co {
+        font-size: 14px;
+    }
+    #business-points .opis {
+        font-size: 14px;
+        width: 90%;
+    }
+    #business-points ul {
+        padding-top: 20px;
+    }
+    #business-points li {
+        font-size: 13px;
+		padding-bottom: 7%;
+    }
+    #business-points img {
+        width: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #business-outsourcing h3 {
+        font-size: 14px;
+        padding-top: 25px;
+    }
+    #business-outsourcing h2 {
+        font-size: 14px;
+        padding-top: 30px;
+    }
+    #business-outsourcing li {
+        font-size: 12px;
+    }
+    #chmura-azure h3 {
+        font-size: 14px;
+    }
+    #baza-danych h3 {
+        padding-bottom: 0px;
+        font-size: 14px;
+    }
+    #baza-danych li {
+        font-size: 12px;
+    }
+    #baza-danych #baza-danych-img-mobile {
+        width: 26%;
+        padding-left: 6%;
+        position: absolute;
+        top: 19%;
+    }
+    #korzysci .korzysci-img {
+        height: 15%;
+        left: 5%;
+    }
+    #korzysci h3 {
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    #korzysci li {
+        font-size: 12px;
+    }
+    #zobacz-cennik button {
+        height: 55px;
+        width: 220px;
+        border-radius: 40px;
+        font-size: 16px;
+    }
+    footer img {
+        width: 130px;
+    }
+    footer h3 {
+        font-size: 14px;
+    }
+    .footer-linki a {
+        font-size: 14px;
+    }
+    footer {
+        text-align: center;
+        float: none;
+    }
+    .credits {
+        text-align: center;
+        float: none;
+    }
+    .footer-linki {
+        float: none;
+    }
+    footer .footer-col-1 {
+        width: 100%;
+        padding-right: 15%;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 370px) {
+    
+    #business-points h1 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    #business-points .opis {
+        font-size: 13px;
+        padding-top: 20px;
+    }
+    #business-points li {
+        font-size: 12px;
+    }
+    #business-points img {
+        width: 35px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #business-outsourcing h1 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    #business-outsourcing h3 {
+        font-size: 13px;
+        padding-top: 20px;
+    }
+    #business-outsourcing h2 {
+        font-size: 13px;
+    }
+    #business-outsourcing li {
+        font-size: 12px;
+    }
+    #chmura-azure h1 {
+        font-size: 25px;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    #chmura-azure h3 {
+        font-size: 13px;
+    }
+    #chmura-azure button {
+        height: 45px;
+        width: 190px;
+        font-size: 13px;
+        margin-top: 1%;
+    }
+    #baza-danych h1 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    #baza-danych h3 {
+        font-size: 13px;
+    }
+    #baza-danych #baza-danych-img {
+        top: 180px;
+    }
+    #baza-danych li {
+        font-size: 12px;
+    }
+    .btn-green {
+        height: 40px;
+        width: 110px;
+        font-size: 15px;
+    }
+    .btn-white {
+        height: 40px;
+        width: 110px;
+        font-size: 15px;
+    }
+    #korzysci h1 {
+        font-size: 25px;
+    }
+    #korzysci hr {
+        top: 150px;
+    }
+
+    #korzysci h3 {
+        font-size: 13px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        padding-left: 38%;
+    }
+    #korzysci li {
+        font-size: 12px;
+    }
+    #korzysci .korzysci-img {
+        margin-bottom: 8px;
+        margin-top: 12px;
+        height: 17%;
+        left: 3%;
+        position: absolute;
+        top: 180px;
+    }
+    footer img {
+        width: 120px;
+    }
+    footer h3 {
+        font-size: 13px;
+    }
+    .footer-linki a {
+        font-size: 13px;
+    }
+    header nav li{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    footer {
+        text-align: center;
+        float: none;
+    }
+    .credits {
+        text-align: center;
+        float: none;
+    }
+    .footer-linki {
+        float: none;
+    }
+    footer .footer-col-1 {
+        width: 100%;
+        padding-right: 15%;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 330px) {
+    
+    #business-points h1 {
+        font-size: 22px;
+    }
+    #business-outsourcing h1 {
+        font-size: 22px;
+    }
+    #chmura-azure h1 {
+        font-size: 22px;
+    }
+    #baza-danych h1 {
+        font-size: 22px;
+    }
+    #baza-danych #baza-danych-img-mobile {
+        width: 27%;
+        padding-left: 6%;
+        position: absolute;
+        top: 23%;
+    }
+    #korzysci h1 {
+        font-size: 22px;
+    }
+    #korzysci hr {
+        top: 125px;
+    }
+
+    #korzysci .korzysci-img {
+        margin-bottom: 8px;
+        margin-top: 10px;
+        height: 15%;
+        left: 3%;
+        position: absolute;
+        top: 180px;
+    }
+    header nav li{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    footer {
+        text-align: center;
+        float: none;
+    }
+    .credits {
+        text-align: center;
+        float: none;
+    }
+    .footer-linki {
+        float: none;
+    }
+    footer .footer-col-1 {
+        width: 100%;
+        padding-right: 15%;
+    }
+    footer h3 {
+        font-size: 14px;
+    }
+}
+
